@@ -5,15 +5,14 @@ This project simulates a complete **data lake architecture**, starting from raw 
 ## Project Structure
 data-lake-project/
 
-# 1.sample/ # Source folder with dummy files (CSV, TXT, PDF)
+### sample/ # Source folder with dummy files (CSV, TXT, PDF)
 -  Data Co2.csv
 -  dokumentasi interaksi pengguna di media sosial.txt
 -  PT PRIMA BERSAMA.pdf
-
-# 2.raw/ # Output from ingest.py (organized by file type)
--  processed/ # Cleaned CSV files from processed.py
-
-# 3.ingest.py # Sorts files by type into 'raw/' folder
+### raw/ # Output from ingest.py (organized by file type)
+### processed/ # Cleaned CSV files from processed.py
+### Script Python
+-  ingest.py # Sorts files by type into 'raw/' folder
 -  processed.py # Converts TXT and PDF files to CSV format
 -  analyze.py # Analyzes and uploads data to staging database
 -  stagtodw.py # Builds star schema in data warehouse (fact + dimensions)
